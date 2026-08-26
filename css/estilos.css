@@ -8,4 +8,9 @@ body{
   padding: 10px 20px;        /* Añade espacio interno */
   cursor: pointer;           /* Cambia el cursor al pasar por encima */
 }
+.row g-4{
+  display: flex; /* Activa el modo flex */
+  flex-direction: row; /* Alinea los hijos en línea (horizontal) */
+  gap: 20px; /* Define el espacio exacto entre cada card */
 
+}
