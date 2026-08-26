@@ -47,17 +47,17 @@
 </div>
 
 
-<div class="container text-center">
+<div class="d-flex justify-content-center align-items-center w-100 min-vh-30">
   <div class="row g-4 align-items-stretch">
     
     <div class="col-md-4">
             <div class="card h-100" style="width: 18rem;">
     
-            <img src="../img/imagen_dia.jpg" class="card-img-top" alt="...">
+            <img src="../img/imagen_dia.jpg" class="card-img-top " style= "height: 330px; width: 285px" alt="...">
   
-            <div class="card-body">
+            <div class="card-body" >
   
-              <p class="card-text">"Fecha y Hora asignadas"</p>
+              <p class="card-text" >"Fecha y Hora asignadas"</p>
   
             </div>
   
@@ -68,11 +68,11 @@
 
         <div class="card h-100" style="width: 18rem;">
     
-            <img src="../img/imagen_mesero.jpg" class="card-img-top" alt="...">
+            <img src="../img/imagen_mesero.jpg" class="card-img-top" style= "height: 330px; width: 288px" alt="...">
   
             <div class="card-body d-flex">
   
-              <p class="card-text">"Una mesa especial para un momento especial"</p>
+              <p class="card-text text-center">"Una mesa especial para un momento especial"</p>
   
             </div>
   
@@ -84,11 +84,11 @@
 
       <div class="card h-100" style="width: 18rem;">
     
-            <img src="../img/imagen_reserva.png" class="card-img-top" alt="...">
+            <img src="../img/imagen_reserva.png" class="card-img-top" style= "height: 330px; width: 285px" alt="...">
   
             <div class="card-body">
   
-              <p class="card-text">"Sin problemas de Disponibilidad"</p>
+              <p class="card-text text-center">"Sin problemas de Disponibilidad"</p>
   
             </div>
   
@@ -98,57 +98,84 @@
 
   </div>
 
-</div>
 
-<div class = "text-center">
+</div class = "text-center">
 
-  <h1>ESPACIO</h1>
-  <h1>ESPACIO</h1>
-  <h1>ESPACIO</h1>  
-
-</div>
-
-
-<div class = "container">
-
-  <div class = "row justify-content-between align-items-start">
-
-      <div class = "col-md-5">
-
-        <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        
-        </form>
-
-      </div>
-
-      <div class = "col-md-5">
+      <div class = "text-center">
         <p>
           Bienvenido al apartado de reserva, para reservar una mesa debera completar el siguiente formulario otorgando ciertos datos personales <br>
           Debe ingresar su nombre, su rut, su digito identificador y la mesa a continuacion <br>
         </p>
-      </div>
 
-
-
-  </div>
-
+        
 </div>
 
-  
+
+    <div class="d-flex justify-content-center align-items-center min-vh-40">
+      <h1>FORMULARIO DE RESERVA</h1>
+    </div>
+
+<div class="d-flex justify-content-center align-items-center w-100 min-vh-30">
+
+  <div class="row w-100 justify-content-center">
+
+    <div class="col-12 col-md-6 col-lg-5">
+
+      <form>
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label for="nombreCompleto" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombreCompleto" aria-describedby="nombreId">
+          <div id="nombreId" class="form-text">Ingrese su nombre completo.</div>
+        </div>
+
+        <!-- RUT y DV Alineados -->
+        <div class="row mb-3">
+
+          <div class="col-8">
+            <label for="rut" class="form-label">Rut</label>
+            <input type="number" class="form-control" id="rut" aria-describedby="rutHelp">
+          </div>
+
+          <div class="col-4">
+            <label for="digitoVerificador" class="form-label">DV</label>
+            <select class="form-select" id="digitoVerificador" name="digitoVerificador">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="K">K</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <div id="rutHelp" class="form-text">Ingrese su rut sin dígito verificador y seleccione su DV.</div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca comparta su correo electrónico.</div>
+        </div>
+
+        <div>
+          
+        </div>
+
+        <!-- Botón -->
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+
+    </div>
+  </div>
+</div>
 
 
 
