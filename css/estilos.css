@@ -1,0 +1,16 @@
+body{
+    color: gray;
+}
+.boton1{
+    background-color: #3498db; /* Cambia el fondo a color azul */
+  color: white;              /* Cambia el texto a color blanco */
+  border: none;              /* Quita el borde por defecto */
+  padding: 10px 20px;        /* Añade espacio interno */
+  cursor: pointer;           /* Cambia el cursor al pasar por encima */
+}
+.row g-4{
+  display: flex; /* Activa el modo flex */
+  flex-direction: row; /* Alinea los hijos en línea (horizontal) */
+  gap: 20px; /* Define el espacio exacto entre cada card */
+
+}
